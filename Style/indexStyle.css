@@ -1,0 +1,254 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../Fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "Yellowtail";
+    src: url(../Fonts/Yellowtail/Yellowtail-Regular.ttf);
+}
+:root{
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background: #005792;
+    color: #e3e3e3;
+    padding: 1em 0;
+    height: 10vh;
+}
+.header-title{
+    margin-top: 0.5em;
+    margin-left: 2em;
+    font-size: xx-large;
+    font-family: "Yellowtail";
+    letter-spacing: 3px;
+}
+.navbar {
+    display: flex;
+    justify-content:space-between;
+}
+
+.navbar img{
+    height: 8vh;
+    margin-left: 5em;
+}
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 10em;
+}
+  
+.dropdown-trigger {
+    font-size: x-large;
+    cursor: pointer;
+    padding-top: 3vh;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.dropdown-list {
+    display: none;
+    position: absolute;
+    margin-top: 0.6em;
+    background-color: #f95959;
+    border-radius: 10px;
+    font-weight: bold;
+}
+  
+.dropdown-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+  
+.dropdown-list li {
+    padding: 1em;
+    font-size: larger;
+}
+
+a{
+    text-decoration: none;
+    color: #f8f8f8;
+}
+
+.dropdown-list a {
+    text-decoration: none;
+    color: #f8f8f8;
+}
+
+.dropdown-list a:hover {
+    text-decoration: none;
+    color: #e3e3e3;
+}
+.welcome-part{
+    height: 90vh;
+    background: radial-gradient(circle at 0% 0.5%, rgb(241, 241, 242) 0.1%, rgb(224, 226, 228) 100.2%);
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.homepage-img-wrapper {
+    background: linear-gradient(
+      156.8deg,
+      rgb(30, 144, 231) 27.1%,
+      rgb(67, 101, 225) 77.8%
+    );
+    border-radius: 70% 30% 22% 78% / 37% 30% 70% 63%;
+    width: 50vh;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.welcome-part img {
+    transition: all 0.5s ease;
+    /* margin-left: 10%; */
+    height: 70%;
+}
+
+.welcome-part img:hover{
+    transform: scale(1.1);
+}
+
+.try-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50%;
+    padding: 1em 2em;
+    background: #0092ca;
+    color: #eeeeee;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: max-content;
+    height: max-content;
+    font-size:x-large;
+    font-weight: bold;
+}
+
+#app{
+    background: #393e46;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator-app {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto repeat(5, 1fr);
+    gap: 5px;
+    grid-template-areas:
+    "display display clear equal"
+    "power mul divide plus"
+    "eight nine dot minus"
+    "four five six seven"
+    "zero one two three";
+    padding: 2em;
+    background-color: #eeeeee;
+    border-radius: 10px;
+}
+  
+button {
+    font-size: 1em;
+    padding: 1em;
+    border: none;
+    cursor: pointer;
+    background-color: #222831;
+    color: white;
+}
+#display{
+    grid-area: display;
+    padding: 1em;
+    font-size: 1.2em;
+    text-align: right;
+}
+#btn-clear{
+    grid-area:"clear";
+}
+#btn-nine{
+    grid-area: "nine";
+}
+#btn-eight{
+    grid-area:"eight";
+}
+#btn-seven{
+    grid-area:"seven";
+}
+#btn-six{
+    grid-area: "six";
+}
+#btn-five{
+    grid-area: "seven";
+}
+#btn-four{
+    grid-area: "four";
+}
+#btn-three{
+    grid-area:"three";
+}
+#btn-two{
+    grid-area: "two";
+}
+#btn-one{
+    grid-area: "one";
+}
+#btn-zero{
+    grid-area: "zero";
+}
+#btn-plus{
+    grid-area: "plus";
+}
+#btn-minus{
+    grid-area: "minus";
+}
+#btn-mul{
+    grid-area: "mul";
+}
+#btn-divide{
+    grid-area: "divide";
+}
+#btn-equal{
+    grid-area: "equal";
+}
+#btn-dot{
+    grid-area: "dot";
+}
+button:hover {
+    background-color: #555;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222831;
+    cursor: default;
+    height: 30vh;
+}
+p{
+    color: #eeeeee;
+    text-align: center;
+    margin-top: 1em;
+    font-size: larger;
+}
+.footer-icons{
+    font-size: 2.5em;
+}
+#x-icon, #github-icon, #linkedin-icon{
+    margin: 0.5em;
+}
+
+#x-icon:hover, #github-icon:hover, #linkedin-icon:hover{
+    color: aliceblue;
+    cursor: pointer;
+}
