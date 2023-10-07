@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="Images/Calculator.png">
+    <link rel="stylesheet" href="Style/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="Style/indexStyle.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+          <div class="header-title">
+            <a href="index.html">Calculator App</a>
+          </div>
+          <div class="dropdown-container">
+            <div class="dropdown-trigger">Other Calculators</div>
+            <div class="dropdown-list">
+              <ul>
+                <li><a href="BMI.html">BMI Calculator</a></li>
+                <li><a href="Currency.html">Currency Converter</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section class="welcome-part">
+        <div class="homepage-img-wrapper">
+          <img src="Images/homePageImg2.png" alt="homepage-img">
+        </div>
+        <a href="#app">
+        <div class="try-button">
+          Try It
+        </div>
+        </a>
+      </section>
+
+      <section id="app">
+        <div id="calculator-app">
+        <input title="display-area" type="text" id="display" readonly grid-area="display">
+        <button type="button" id="btn-clear">C</button>
+        <button type="button" id="btn-equal">=</button>
+        <button type="button" id="btn-power">^</button>
+        <button type="button" id="btn-mul">&times;</button>
+        <button type="button" id="btn-divide">/</button>
+        <button type="button" id="btn-plus">+</button>
+        <button type="button" id="btn-eight">8</button>
+        <button type="button" id="btn-nine">9</button>
+        <button type="button" id="btn-dot">.</button>
+        <button type="button" id="btn-minus">-</button>
+        <button type="button" id="btn-four">4</button>
+        <button type="button" id="btn-five">5</button>
+        <button type="button" id="btn-six">6</button>
+        <button type="button" id="btn-seven">7</button>
+        <button type="button" id="btn-zero">0</button>
+        <button type="button" id="btn-one">1</button>
+        <button type="button" id="btn-two">2</button>
+        <button type="button" id="btn-three">3</button>
+        </div>
+      </section>
+
+      <section class="footer">
+        <div class="footer-content">
+          <div class="footer-icons">
+              <a href="https://twitter.com/notahmedwael" title="x-link" target="_blank" rel="noopener"><i id = "x-icon" class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://github.com/notahmedwael" title="github-link" target="_blank" rel="noopener"><i id = "github-icon" class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/ahmed-wael-9a6389284/" title="linkedin-link" target="_blank" rel="noopener"><i id = "linkedin-icon" class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <hr>
+          <p>
+          Developed By Ahmed Wael
+          </p>
+      </div>
+      </section>
+<script src="Script/calculatorScript.js"></script>
+</body>
+</html>

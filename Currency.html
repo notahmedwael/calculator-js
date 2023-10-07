@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Calculator</title>
+    <link rel="icon" href="Images/Calculator.png">
+    <link rel="stylesheet" href="Style/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="Style/currencyStyle.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="header-title">
+            <a href="index.html">Calculator App</a>
+          </div>
+          <div class="dropdown-container">
+            <div class="dropdown-trigger">Other Calculators</div>
+            <div class="dropdown-list">
+              <ul>
+                <li><a href="BMI.html">BMI Calculator</a></li>
+                <li><a href="index.html">Simple Calculator</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section class="welcome-part">
+        <div class="homepage-img-wrapper">
+          <img src="Images/currencyConverter.png" alt="currencyConverter-img">
+        </div>
+        <a href="#app">
+        <div class="try-button">
+          Try It
+        </div>
+        </a>
+      </section>
+      
+      <section id="app">
+        <p>
+          Currency Converter APP
+        </p>
+        <input type="text" placeholder="Enter amount" id="amount">
+        <div class="container">
+          <select title="from" id="select-from">
+            <option value="AED">
+              United Arab Emirates Dirham (AED)
+            </option>
+  
+            <option value="SAR">
+              Saudi Riyal (SAR)
+            </option>
+  
+            <option value="QAR">
+              Qatari Riyal (QAR)
+            </option>
+  
+            <option value="OMR">
+              Omani Rial (OMR)
+            </option>
+  
+            <option value="KWD">
+              Kuwaiti Dinar (KWD)
+            </option>
+  
+            <option value="BHD">
+              Bahraini Dinar (BHD)
+            </option>
+  
+            <option value="JOD">
+              Jordanian Dinar (JOD)
+            </option>
+  
+            <option value="LBP">
+              Lebanese Pound (LBP)
+            </option>
+  
+            <option value="EGP">
+              Egyptian Pound (EGP)
+            </option>
+  
+            <option value="TRY">
+              Turkish Lira (TRY)
+            </option>
+  
+            <option value="IRR">
+              Iranian Rial (IRR)
+            </option>
+            
+            <option value="USD">
+              United States Dollar (USD)
+            </option>
+            
+            <option value="EUR">
+              Euro (EUR)
+            </option>
+            
+            <option value="GBP">
+              British Pound Sterling (GBP)
+            </option>
+            
+            <option value="JPY">
+              Japanese Yen (JPY)
+            </option>
+            
+            <option value="CHF">
+              Swiss Franc (CHF)
+            </option>
+            
+            <option value="CAD">
+              Canadian Dollar (CAD)
+            </option>
+            
+            <option value="CNY">
+              Chinese Yuan Renminbi (CNY/RMB)
+            </option>
+            
+            <option value="ZAR">
+              South African Rand (ZAR)
+            </option>
+            
+            <option value="BRL">
+              Brazilian Real (BRL)
+            </option>
+            
+            <option value="RUB">
+              Russian Ruble (RUB)
+            </option>
+            
+            <option value="MXN">
+              Mexican Peso (MXN)
+            </option>
+            
+            <option value="SGD">
+              Singapore Dollar (SGD)
+            </option>
+            
+            <option value="HKD">
+              Hong Kong Dollar (HKD)
+            </option>
+          </select>
+          <select title="to" id="select-to">
+            <option value="AED">
+              United Arab Emirates Dirham (AED)
+            </option>
+  
+            <option value="SAR">
+              Saudi Riyal (SAR)
+            </option>
+  
+            <option value="QAR">
+              Qatari Riyal (QAR)
+            </option>
+  
+            <option value="OMR">
+              Omani Rial (OMR)
+            </option>
+  
+            <option value="KWD">
+              Kuwaiti Dinar (KWD)
+            </option>
+  
+            <option value="BHD">
+              Bahraini Dinar (BHD)
+            </option>
+  
+            <option value="JOD">
+              Jordanian Dinar (JOD)
+            </option>
+  
+            <option value="LBP">
+              Lebanese Pound (LBP)
+            </option>
+  
+            <option value="EGP">
+              Egyptian Pound (EGP)
+            </option>
+  
+            <option value="TRY">
+              Turkish Lira (TRY)
+            </option>
+  
+            <option value="IRR">
+              Iranian Rial (IRR)
+            </option>
+            
+            <option value="USD">
+              United States Dollar (USD)
+            </option>
+            
+            <option value="EUR">
+              Euro (EUR)
+            </option>
+            
+            <option value="GBP">
+              British Pound Sterling (GBP)
+            </option>
+            
+            <option value="JPY">
+              Japanese Yen (JPY)
+            </option>
+            
+            <option value="CHF">
+              Swiss Franc (CHF)
+            </option>
+            
+            <option value="CAD">
+              Canadian Dollar (CAD)
+            </option>
+            
+            <option value="CNY">
+              Chinese Yuan Renminbi (CNY/RMB)
+            </option>
+            
+            <option value="ZAR">
+              South African Rand (ZAR)
+            </option>
+            
+            <option value="BRL">
+              Brazilian Real (BRL)
+            </option>
+            
+            <option value="RUB">
+              Russian Ruble (RUB)
+            </option>
+            
+            <option value="MXN">
+              Mexican Peso (MXN)
+            </option>
+            
+            <option value="SGD">
+              Singapore Dollar (SGD)
+            </option>
+            
+            <option value="HKD">
+              Hong Kong Dollar (HKD)
+            </option>
+          </select>
+        </div>
+        <a href="#results"><input type="button" id="calculateButton" value="Convert"></a>
+        <hr>
+        <p id="results">
+          
+        </p>
+      </section>
+
+      <section class="footer">
+        <div class="footer-content">
+          <div class="footer-icons">
+              <a href="https://twitter.com/notahmedwael" title="x-link" target="_blank" rel="noopener"><i id = "x-icon" class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://github.com/notahmedwael" title="github-link" target="_blank" rel="noopener"><i id = "github-icon" class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/ahmed-wael-9a6389284/" title="linkedin-link" target="_blank" rel="noopener"><i id = "linkedin-icon" class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <hr>
+          <p>
+          Developed By Ahmed Wael
+          </p>
+      </div>
+      </section>   
+<script src="Script/currencyScript.js"></script>
+</body>
+</body>
+</html>
