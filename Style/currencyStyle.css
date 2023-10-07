@@ -91,6 +91,8 @@ a{
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
+    overflow: hidden;
+    margin-right: 0;
 }
 
 .homepage-img-wrapper {
@@ -136,7 +138,6 @@ a{
 
 #app{
     background: #393e46;
-    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     padding-top: 3em;
@@ -149,8 +150,9 @@ a{
 }
 .container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 4em;
+    overflow: hidden;
 }
 input[type="text"], select {
     width: max-content;
