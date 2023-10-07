@@ -53,6 +53,9 @@ buttons.forEach((button)=>{
         else if(buttonText === "^"){
             addToDisplay("**");
         }
+        else if(buttonText === "×"){
+            addToDisplay("*");
+        }
         else{
             addToDisplay(buttonText);
         }
