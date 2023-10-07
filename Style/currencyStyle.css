@@ -210,3 +210,48 @@ p{
     color: aliceblue;
     cursor: pointer;
 }
+@media (max-width: 768px) {
+    .welcome-part {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .welcome-part .homepage-img-wrapper {
+        width: 70%;
+        height: auto;
+    }
+
+    .welcome-part img {
+        height: auto;
+    }
+
+    .try-button {
+        margin-right: 0;
+        margin-top: 1em;
+    }
+
+    #app {
+        padding: 1em;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 2em;
+        text-align: center;
+    }
+
+    input[type="text"], select {
+        width: 100%;
+        padding: 1em;
+        font-size: large;
+    }
+
+    input[type="button"] {
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    hr {
+        width: 80%;
+    }
+}
